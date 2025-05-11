@@ -36,7 +36,7 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
             subItems: [
                 { name: "프리다이빙", href: "/intro/freediving" },
                 { name: "강사진", href: "/intro/instructors" },
-                { name: "다이빙 풀장", href: "/intro/pool" },
+                // { name: "다이빙 풀장", href: "/intro/pool" },
                 { name: "투어", href: "/intro/tour" },
                 { name: "자격증 단체", href: "/intro/certification" }
             ]
@@ -68,16 +68,9 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
         {
             title: "갤러리",
             subItems: [
+                { name: "전체", href: "/gallery?category=all" },
                 { name: "다이빙 풀장", href: "/gallery?category=pool" },
-                { name: "대구 두류다이빙 풀", href: "/gallery?category=pool&subcategory=duryu", isSubItem: true },
-                { name: "구미 패스나인", href: "/gallery?category=pool&subcategory=passnine", isSubItem: true },
-                { name: "대전 알프스", href: "/gallery?category=pool&subcategory=alpsdiving", isSubItem: true },
-                { name: "부산 북항마리나", href: "/gallery?category=pool&subcategory=marina", isSubItem: true },
-                { name: "용인 딥스테이션", href: "/gallery?category=pool&subcategory=deepstation", isSubItem: true },
-                { name: "시흥 파라다이브", href: "/gallery?category=pool&subcategory=paradive", isSubItem: true },
-                { name: "투어", href: "/gallery?category=tour" },
-                { name: "국내 투어", href: "/gallery?category=tour&subcategory=domestic", isSubItem: true },
-                { name: "해외 투어", href: "/gallery?category=tour&subcategory=overseas", isSubItem: true }
+                { name: "투어", href: "/gallery?category=tour" }
             ]
         },
         {
@@ -130,9 +123,9 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
                     </button>
 
                     {/* 메뉴 컨텐츠 */}
-                    <div className="w-full mx-auto px-6 sm:px-20 pt-40 sm:pt-48">
+                    <div className="flex justify-center w-full mx-auto px-6 sm:px-20 pt-40 sm:pt-48">
                         {/* 데스크톱 메뉴 */}
-                        <div className="hidden lg:grid grid-cols-5 gap-0">
+                        <div className="hidden lg:grid grid-cols-5 gap-20">
                             {menuItems.map((item, index) => (
                                 <div key={index} className="text-white border-l border-white/20 pl-10 min-h-[400px]">
                                     <h3 className="text-xl font-medium mb-8 text-white/90">{item.title}</h3>
