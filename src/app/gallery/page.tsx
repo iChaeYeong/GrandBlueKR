@@ -154,8 +154,9 @@ function GalleryContent() {
             </div>
 
             {/* 갤러리 컨텐츠 */}
-            <div className="bg-white dark:bg-gray-900">
-                <div className="py-16 px-4 sm:px-6 lg:px-8">
+            {/* <div className="bg-white  dark:bg-gray-900"> */}
+            <div className="bg-white ">
+                <div className="py-8 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         {/* 카테고리 필터 */}
                         <div className="flex flex-wrap justify-center gap-4 mb-10">
@@ -163,9 +164,9 @@ function GalleryContent() {
                                 <motion.button
                                     key={category.id}
                                     onClick={() => setSelectedCategory(category.id)}
-                                    className={`px-6 py-2 rounded-full transition-all ${selectedCategory === category.id
+                                    className={`px-4 py-2 text-sm rounded-full transition-all ${selectedCategory === category.id
                                         ? "bg-blue-600 text-white"
-                                        : "bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+                                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                         }`}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
