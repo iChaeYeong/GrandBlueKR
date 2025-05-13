@@ -123,9 +123,9 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
                     </button>
 
                     {/* 메뉴 컨텐츠 */}
-                    <div className="flex justify-center w-full mx-auto px-6 sm:px-20 pt-40 sm:pt-48">
+                    <div className="flex justify-center flex-col lg:flex-row w-full mx-auto px-6 sm:px-20 pt-40 sm:pt-48">
                         {/* 데스크톱 메뉴 */}
-                        <div className="hidden lg:grid grid-cols-5 gap-20">
+                        <div className="hidden lg:grid grid-cols-5 gap-20 ">
                             {menuItems.map((item, index) => (
                                 <div key={index} className="text-white border-l border-white/20 pl-10 min-h-[400px]">
                                     <h3 className="text-xl font-medium mb-8 text-white/90">{item.title}</h3>
@@ -210,7 +210,7 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
                         </div>
 
                         {/* SNS 링크 */}
-                        <div className="flex justify-end sm:block mt-20 mb-10">
+                        <div className="flex justify-end sm:block mt-10 mb-10">
                             <div className="flex sm:flex-col gap-6">
                                 <Link href="https://cafe.naver.com/grandbluehabin" target="_blank" onClick={onClose}>
                                     <Image
