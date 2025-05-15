@@ -37,7 +37,7 @@ export default function Navigation() {
     const menuItems: MenuItem[] = [
         {
             title: "소개",
-            href: "/intro",
+            href: "/intro/freediving",
             items: [
                 { name: "프리다이빙", href: "/intro/freediving" },
                 { name: "강사진", href: "/intro/instructors" },

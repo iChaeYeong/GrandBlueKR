@@ -94,7 +94,7 @@ export default function RootLayout({
                 }
               })();
               ChannelIO('boot', {
-                "pluginKey": "e6dfbedd-d7eb-4c56-9a3a-0818166358ed"
+                "pluginKey": "b7c5c0f9-9a9c-4257-a526-70c7e7c02b80"
               });
             `
           }}
