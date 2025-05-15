@@ -154,6 +154,16 @@ export default function CoursePage() {
             price: "1,500,000 ₩"
         },
         {
+            id: "youth",
+            name: "Youth FreeDiving",
+            depth: "#",
+            duration: "#일",
+            description: "만 6세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
+            image: "/image/course/erp.jpg",
+            certifications: ["PSA", "AIDA"],
+            price: "250,000 ₩"
+        },
+        {
             id: "package",
             name: "Package",
             depth: "#",
@@ -293,16 +303,6 @@ export default function CoursePage() {
                     description: "응급 상황 대처와 구조 기술을 배우는 과정입니다."
                 }
             ]
-        },
-        {
-            id: "ERP",
-            name: "ERP 응급처치",
-            depth: "#",
-            duration: "#일",
-            description: "####",
-            image: "/image/course/erp.jpg",
-            certifications: ["PSA"],
-            price: "250,000 ₩"
         }
     ];
 

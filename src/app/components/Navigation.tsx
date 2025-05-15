@@ -57,9 +57,10 @@ export default function Navigation() {
                 { name: "Lv 4", href: "/course#lv4" },
                 { name: "Package", href: "/course#package" },
                 { name: "Instructor", href: "/course#instructor" },
+                { name: "Youth FreeDiving", href: "/course#youth" },
                 { name: "Mermaid", href: "/course#mermaid" },
                 { name: "Scuba", href: "/course#scuba" },
-                { name: "ERP 응급처치", href: "/course#ERP" }
+
             ]
         },
         // {
@@ -86,7 +87,7 @@ export default function Navigation() {
             href: "/store",
             items: [
                 { name: "N \- 스토어", href: "/store/freediving" },
-                { name: "숨고", href: "/store/instructors" },
+                { name: "숨고", href: "https://www.soomgo.com/profile/users/1172930" },
                 { name: "다이빙 풀장", href: "/store/pool" },
                 { name: "투어", href: "/store/tour" }
             ]
@@ -100,7 +101,7 @@ export default function Navigation() {
                 <div className={`absolute left-6 sm:left-30 transition-all duration-300 ${scrolled ? 'top-4' : 'top-10'}`}>
                     <Link href="/">
                         <Image
-                            src={scrolled && !isGalleryPage ? "/grandblue_b.svg" : "/grandblue.svg"}
+                            src={scrolled && !isGalleryPage ? "/grandblue_logo_b.png" : "/grandblue_logo.png"}
                             alt="그랑블루 로고"
                             width={scrolled ? 100 : 120}
                             height={scrolled ? 40 : 50}

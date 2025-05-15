@@ -8,7 +8,7 @@ export default function Instructors() {
         {
             name: "김하빈",
             title: "대표 / 강사",
-            image: "/image/intro/instructors/instructor-habin.jpg",
+            image: "/image/intro/instructors/instructor-habin.jpeg",
             description: "그랑블루 대구경북 지점의 대표 강사로서, 풍부한 경험과 전문 지식을 바탕으로 안전하고 효과적인 프리다이빙 교육을 제공합니다. 다양한 국제 자격증을 보유하고 있습니다.",
             certifications: [
                 "PSA Freediving Instructor Trainer (강사훈련관)",
@@ -18,7 +18,7 @@ export default function Instructors() {
                 "PSA First Aid, CPR and Emergency Oxygen for Adult, Children and Infant Instructor Trainer",
                 "Advanced Rescue Freediver Instructor",
                 "Nopin Diver Instructor",
-                "AIDA JUDGES (AIDA 프리다이빙 국제심판)",
+                "AIDA JUDGE (AIDA 프리다이빙 국제심판)",
                 "Apnea Underwater PhotoGrapher Instructor",
                 "PSA Mermaid Instructor",
                 "PSAI Scuba Openwater Instructor"
@@ -119,7 +119,12 @@ export default function Instructors() {
                                             {/* SNS 링크 */}
                                             <div className="flex gap-4 mt-6">
                                                 {instructor.social.kakao && (
-                                                    <div className="flex items-center gap-2 py-2 px-4 bg-yellow-400 text-black rounded-full hover:bg-yellow-500 transition-colors cursor-pointer">
+                                                    <a
+                                                        href={instructor.social.kakao}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="flex items-center gap-2 py-2 px-4 bg-yellow-400 text-black rounded-full hover:bg-yellow-500 transition-colors cursor-pointer"
+                                                    >
                                                         <Image
                                                             src="/talkIcon.svg"
                                                             alt="카카오톡"
@@ -128,10 +133,15 @@ export default function Instructors() {
                                                             className="opacity-80"
                                                         />
                                                         <span>카카오톡</span>
-                                                    </div>
+                                                    </a>
                                                 )}
                                                 {instructor.social.instagram && (
-                                                    <div className="flex items-center gap-2 py-2 px-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-colors cursor-pointer">
+                                                    <a
+                                                        href={instructor.social.instagram}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="flex items-center gap-2 py-2 px-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-colors cursor-pointer"
+                                                    >
                                                         <Image
                                                             src="/instargram.svg"
                                                             alt="인스타그램"
@@ -140,7 +150,7 @@ export default function Instructors() {
                                                             className="opacity-80"
                                                         />
                                                         <span>인스타그램</span>
-                                                    </div>
+                                                    </a>
                                                 )}
                                             </div>
                                         </div>
