@@ -60,11 +60,11 @@ export default function Slider({ slides }: SliderProps) {
                                 fill
                                 priority
                                 sizes="100vw"
-                                className="object-cover"
+                                className="object-cover object-[55%_center]"
                                 quality={100}
                             />
                             {/* 이미지 위에 그라데이션 오버레이 */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/30" />
 
                             {/* 텍스트 컨텐츠 */}
                             <div className="absolute inset-0 flex flex-col justify-center px-20">
@@ -93,7 +93,7 @@ export default function Slider({ slides }: SliderProps) {
                                             }}
                                         >
                                             <motion.h1
-                                                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white"
+                                                className="text-3xl sm:text-6xl lg:text-7xl font-bold text-white"
                                                 initial={{ opacity: 0, x: -30 }}
                                                 animate={{
                                                     opacity: 1,
@@ -108,7 +108,7 @@ export default function Slider({ slides }: SliderProps) {
                                                 {slide.title}
                                             </motion.h1>
                                             <motion.p
-                                                className="text-xl sm:text-2xl text-white/90"
+                                                className="text-l sm:text-2xl text-white/90"
                                                 initial={{ opacity: 0, x: -20 }}
                                                 animate={{
                                                     opacity: 1,

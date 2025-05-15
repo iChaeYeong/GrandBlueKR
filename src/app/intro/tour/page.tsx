@@ -149,6 +149,15 @@ export default function Tour() {
                             <Image src="/instargram.svg" alt="인스타그램" width={24} height={24} className="opacity-80" />
                             인스타그램 DM
                         </a>
+                        <a
+                            href="https://cafe.naver.com/grandbluehabin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 py-3 px-6 bg-[#03C75A] text-white rounded-full hover:bg-[#02B350] transition-colors text-lg font-bold shadow"
+                        >
+                            <Image src="/cafeIcon.svg" alt="네이버" width={24} height={24} className="opacity-80" />
+                            네이버 카페
+                        </a>
                     </div>
                 </div>
             </section>

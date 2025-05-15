@@ -37,8 +37,8 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
                 { name: "프리다이빙", href: "/intro/freediving" },
                 { name: "강사진", href: "/intro/instructors" },
                 // { name: "다이빙 풀장", href: "/intro/pool" },
-                { name: "투어", href: "/intro/tour" },
-                { name: "자격증 단체", href: "/intro/certification" }
+                { name: "투어", href: "/intro/tour" }
+                // { name: "자격증 단체", href: "/intro/certification" }
             ]
         },
         {
@@ -78,7 +78,7 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
             subItems: [
                 { name: "N \- 스토어", href: "/store/freediving" },
                 { name: "숨고", href: "/store/instructors" },
-                { name: "다이빙 풀장", href: "/store/pool" },
+                // { name: "다이빙 풀장", href: "/store/pool" },
                 { name: "투어", href: "/store/tour" }
             ]
         }

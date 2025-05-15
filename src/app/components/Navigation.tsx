@@ -42,8 +42,8 @@ export default function Navigation() {
                 { name: "프리다이빙", href: "/intro/freediving" },
                 { name: "강사진", href: "/intro/instructors" },
                 // { name: "다이빙 풀장", href: "/intro/pool" },
-                { name: "투어", href: "/intro/tour" },
-                { name: "자격증 단체", href: "/intro/certification" }
+                { name: "투어", href: "/intro/tour" }
+                // { name: "자격증 단체", href: "/intro/certification" }
             ]
         },
         {
@@ -88,7 +88,7 @@ export default function Navigation() {
             items: [
                 { name: "N \- 스토어", href: "/store/freediving" },
                 { name: "숨고", href: "https://www.soomgo.com/profile/users/1172930" },
-                { name: "다이빙 풀장", href: "/store/pool" },
+                // { name: "다이빙 풀장", href: "/store/pool" },
                 { name: "투어", href: "/store/tour" }
             ]
         }
