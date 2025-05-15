@@ -100,7 +100,7 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
                     {/* 로고 */}
                     <Link href="/" className="absolute top-10 left-6 sm:left-10" onClick={onClose}>
                         <Image
-                            src="/grandblue.svg"
+                            src="/grandblue_logo.png"
                             alt="그랑블루 로고"
                             width={120}
                             height={50}
