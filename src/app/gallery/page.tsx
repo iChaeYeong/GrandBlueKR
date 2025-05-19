@@ -7,8 +7,7 @@ import { useSearchParams } from "next/navigation";
 const categories = [
     { id: "all", name: "전체" },
     { id: "pool", name: "다이빙 풀장" },
-    { id: "tour", name: "투어" },
-    { id: "dive", name: "해루질" },
+    { id: "tour", name: "투어" }
 ];
 
 function getAltText(alt: string) {
@@ -20,10 +19,13 @@ const galleryImages = [
 
 
     { src: "/image/gallery/tour/투어 - 일본 요론섬 1.jpeg", alt: "일본 요론섬", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 일본 요론섬 2.jpeg", alt: "일본 요론섬", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 일본 요론섬 3.jpeg", alt: "일본 요론섬", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 화보 1.jpeg", alt: "화보", category: "pool" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 1.jpeg", alt: "수심트레이닝", category: "tour" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 2.jpeg", alt: "수심트레이닝", category: "tour" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 3.jpeg", alt: "수심트레이닝", category: "tour" },
+    { src: "/image/gallery/tour/풀장 - 화이트밸런스 1.jpeg", alt: "화이트 밸런스 프리다이빙 대회", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 딥스테이션 1.jpeg", alt: "딥스테이션", category: "pool" },
     { src: "/image/gallery/pool/풀장 - 딥스테이션 2.jpeg", alt: "딥스테이션", category: "pool" },
     { src: "/image/gallery/pool/풀장 - 패스나인 1.jpeg", alt: "패스나인", category: "pool" },
