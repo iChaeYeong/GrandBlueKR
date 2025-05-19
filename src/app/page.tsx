@@ -16,12 +16,12 @@ export default function Free() {
   const slides = [
     {
       title: "그랑블루 하빈",
-      description: "그랑블루대구경북지점 | 프리다이빙 | 투어 | 해루질 ",
+      description: "그랑블루대구경북지점 | 프리다이빙 | 스쿠버 | 투어 ",
       image: "image/home/slider/freebg12.jpeg"
     },
     {
       title: "프리다이빙",
-      description: "AIDA & PSA 강습 | 수중촬영 | 어린이 강습 | 펀다이빙 ",
+      description: "AIDA & PSA 강습 | 수중촬영 | 어린이 강습 | 머메이드 ",
       image: "image/home/slider/freebg2.jpeg"
     },
     {
@@ -261,25 +261,71 @@ export default function Free() {
           </div>
 
           {/* 두 번째 컨텐츠 영역 */}
-          <div className="min-h-screen flex flex-col justify-center py-10 sm:py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
-              {["AIDA & PSA 교육", "투어 프로그램", "시설 안내"].map((title, index) => (
-                <motion.div
-                  key={title}
-                  initial={{ opacity: 0, y: 50 }}
+          <div className="py-20 sm:py-28 bg-gradient-to-b from-white to-gray-50">
+            <div className="max-w-7xl mx-auto">
+              {/* 섹션 헤더 */}
+              <div className="text-center mb-16">
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+                  transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 p-6 sm:p-8 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
+                  className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
                 >
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-                  <p className="text-sm sm:text-base text-gray-600">
-                    {title === "AIDA & PSA 교육" && "국제적으로 인정받는 AIDA와 PSA의 체계적인 교육 과정을 통해 프리다이빙의 기초부터 전문가 과정까지 경험하실 수 있습니다."}
-                    {title === "투어 프로그램" && "국내외 최고의 다이빙 포인트에서 여러분만의 특별한 경험을 만들어보세요. 울릉도, 제주, 동해에서 진행되는 다양한 투어 프로그램을 제공합니다."}
-                    {title === "시설 안내" && "최신 시설과 장비를 갖춘 풀장에서 안전하고 쾌적한 교육이 진행됩니다. 초보자부터 전문가까지 모두가 만족할 수 있는 환경을 제공합니다."}
-                  </p>
-                </motion.div>
-              ))}
+                  그랑블루만의 특별한 가치
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="text-lg text-gray-600"
+                >
+                  최고의 시설과 전문 강사진이 함께하는 프리미엄 프리다이빙 교육
+                </motion.p>
+              </div>
+
+              {/* 카드 그리드 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6">
+                {[
+                  {
+                    title: "AIDA & PSA 공인 강사진",
+                    description: "국제 공인 AIDA & PSA 자격을 갖춘 그랑블루 강사진이 직접 지도합니다. 체계적이고 안전한 프리다이빙 교육을 통해 초보자부터 전문가까지 모두가 신뢰할 수 있는 강습을 경험하세요.",
+                    icon: "🎓",
+                    link: "/intro/instructors"
+                  },
+                  {
+                    title: "투어 프로그램",
+                    description: "울릉도, 동해, 제주 등 국내 명소는 물론, 다양한 해외 투어까지! 그랑블루만의 특별한 일정과 전문 가이드와 함께 잊지 못할 다이빙 여행을 떠나보세요.",
+                    icon: "🌊",
+                    link: "/intro/tour"
+                  },
+                  {
+                    title: "다양한 강습 과정",
+                    description: "어린이를 위한 유스 프리다이빙, 환상적인 머메이드, 그리고 스쿠버 다이빙까지! 연령과 목적에 맞춘 다양한 강습 프로그램으로 누구나 즐겁고 안전하게 수중 세계를 만날 수 있습니다.",
+                    icon: "🏊‍♂️",
+                    link: "/course"
+                  }
+                ].map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                    viewport={{ once: true }}
+                    className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex flex-col"
+                  >
+                    <div className="text-4xl mb-6">{item.icon}</div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.title}</h3>
+                    <p className="text-gray-600 leading-relaxed flex-grow">{item.description}</p>
+                    <div className="mt-8 mt-auto">
+                      <a href={item.link} className="text-blue-600 font-medium hover:text-blue-700 transition-colors">
+                        자세히 보기 →
+                      </a>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
 
