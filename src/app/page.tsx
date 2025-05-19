@@ -26,7 +26,7 @@ export default function Free() {
     },
     {
       title: "투어 프로그램",
-      description: "국내투어 | 해외투어 | 해루질 | 아쿠아리움 | 보홀 ",
+      description: "국내투어 | 해외투어 | 해루질 | 보홀 | 아쿠아리움 ",
       image: "image/home/slider/freebg11.jpeg"
     }
   ];

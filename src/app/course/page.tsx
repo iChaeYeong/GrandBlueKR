@@ -46,6 +46,7 @@ interface Course {
     mermaidOptions?: MermaidOption[];
     isScuba?: boolean;
     scubaOptions?: ScubaOption[];
+    pay?: string;
 }
 
 export default function CoursePage() {
@@ -101,7 +102,8 @@ export default function CoursePage() {
             description: "프리다이빙을 처음 접하는 분들을 위한 체험 과정입니다. 기본적인 장비 사용법과 호흡법을 배우고 풀장에서 안전하게 프리다이빙을 체험해볼 수 있습니다.",
             image: "/image/course/experience.jpg",
             certifications: [],
-            price: "50,000 ₩"
+            price: "50,000 ₩",
+            pay: "https://pay.naver.com/experience"
         },
         {
             id: "lv1",
@@ -111,7 +113,8 @@ export default function CoursePage() {
             description: "프리다이빙의 기초를 배우는 과정으로, 기본적인 안전 수칙과 호흡법을 학습합니다. 수면 호흡법, 덕다이빙 기술, 기초 피닝 등을 배우게 됩니다.",
             image: "/image/course/Lv1.jpg",
             certifications: ["AIDA", "PSA"],
-            price: "100,000 ₩"
+            price: "100,000 ₩",
+            pay: "https://pay.naver.com/lv1"
         },
         {
             id: "lv2",
@@ -121,7 +124,8 @@ export default function CoursePage() {
             description: "심화된 프리다이빙 기술을 배우며, 더 깊은 수심에서의 다이빙을 연습합니다. 프리폴링 기술과 고급 피닝 기술을 습득하게 됩니다.",
             image: "/image/course/Lv2.jpg",
             certifications: ["AIDA", "PSA"],
-            price: "350,000 ₩"
+            price: "350,000 ₩",
+            pay: "https://pay.naver.com/lv2"
         },
         {
             id: "lv3",
@@ -131,7 +135,8 @@ export default function CoursePage() {
             description: "고급 프리다이빙 기술을 습득하고, 깊은 수심에서의 안전한 다이빙을 위한 과정입니다. 마우스필 기술과 고급 이퀄라이제이션을 학습합니다.",
             image: "/image/course/Lv3.jpeg",
             certifications: ["AIDA", "PSA"],
-            price: "550,000 ₩"
+            price: "550,000 ₩",
+            pay: "https://pay.naver.com/lv3"
         },
         {
             id: "lv4",
@@ -141,7 +146,8 @@ export default function CoursePage() {
             description: "전문적인 프리다이버가 되기 위한 과정으로, 극한의 수심에서도 안전하게 다이빙할 수 있는 능력을 기릅니다.",
             image: "/image/course/Lv4.jpeg",
             certifications: ["AIDA", "PSA"],
-            price: "750,000 ₩"
+            price: "750,000 ₩",
+            pay: "https://pay.naver.com/lv4"
         },
         {
             id: "instructor",
@@ -151,7 +157,8 @@ export default function CoursePage() {
             description: "프리다이빙 강사가 되기 위한 전문 교육 과정입니다. 교육 방법론과 안전 관리, 응급 처치 등을 심도 있게 학습합니다.",
             image: "/image/course/Instructor.jpeg",
             certifications: ["PSA"],
-            price: "1,500,000 ₩"
+            price: "1,500,000 ₩",
+            pay: "https://pay.naver.com/instructor"
         },
         {
             id: "youth",
@@ -161,7 +168,8 @@ export default function CoursePage() {
             description: "만 6세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
             image: "/image/course/erp.jpg",
             certifications: ["PSA", "AIDA"],
-            price: "250,000 ₩"
+            price: "250,000 ₩",
+            pay: "https://pay.naver.com/youth"
         },
         {
             id: "package",
@@ -528,7 +536,14 @@ export default function CoursePage() {
                                         )}
 
                                         {/* 신청 버튼 */}
-                                        <button className="w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors">
+                                        <button
+                                            onClick={() => {
+                                                if (course.pay) {
+                                                    window.open(course.pay, '_blank');
+                                                }
+                                            }}
+                                            className="w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors"
+                                        >
                                             과정 신청하기
                                         </button>
                                     </div>
