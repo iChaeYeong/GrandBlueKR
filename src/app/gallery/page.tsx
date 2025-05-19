@@ -25,7 +25,7 @@ const galleryImages = [
     { src: "/image/gallery/tour/투어 - 수심트레이닝 1.jpeg", alt: "수심트레이닝", category: "tour" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 2.jpeg", alt: "수심트레이닝", category: "tour" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 3.jpeg", alt: "수심트레이닝", category: "tour" },
-    { src: "/image/gallery/tour/풀장 - 화이트밸런스 1.jpeg", alt: "화이트 밸런스 프리다이빙 대회", category: "tour" },
+    { src: "/image/gallery/pool/풀장 - 화이트밸런스 1.jpeg", alt: "화이트 밸런스 프리다이빙 대회", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 딥스테이션 1.jpeg", alt: "딥스테이션", category: "pool" },
     { src: "/image/gallery/pool/풀장 - 딥스테이션 2.jpeg", alt: "딥스테이션", category: "pool" },
     { src: "/image/gallery/pool/풀장 - 패스나인 1.jpeg", alt: "패스나인", category: "pool" },
