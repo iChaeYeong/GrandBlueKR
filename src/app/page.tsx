@@ -292,19 +292,19 @@ export default function Free() {
                     title: "AIDA & PSA 공인 강사진",
                     description: "국제 공인 AIDA & PSA 자격을 갖춘 그랑블루 강사진이 직접 지도합니다. 체계적이고 안전한 프리다이빙 교육을 통해 초보자부터 전문가까지 모두가 신뢰할 수 있는 강습을 경험하세요.",
                     icon: "🎓",
-                    link: "/intro/instructors"
+                    link: "/intro/instructors/"
                   },
                   {
                     title: "투어 프로그램",
                     description: "울릉도, 동해, 제주 등 국내 명소는 물론, 다양한 해외 투어까지! 그랑블루만의 특별한 일정과 전문 가이드와 함께 잊지 못할 다이빙 여행을 떠나보세요.",
                     icon: "🌊",
-                    link: "/intro/tour"
+                    link: "/intro/tour/"
                   },
                   {
                     title: "다양한 강습 과정",
                     description: "어린이를 위한 유스 프리다이빙, 환상적인 머메이드, 그리고 스쿠버 다이빙까지! 연령과 목적에 맞춘 다양한 강습 프로그램으로 누구나 즐겁고 안전하게 수중 세계를 만날 수 있습니다.",
                     icon: "🏊‍♂️",
-                    link: "/course"
+                    link: "/course/"
                   }
                 ].map((item, index) => (
                   <motion.div
