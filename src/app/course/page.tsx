@@ -109,7 +109,7 @@ export default function CoursePage() {
             depth: "#",
             duration: "1일",
             description: "프리다이빙의 기초를 배우는 과정으로, 기본적인 안전 수칙과 호흡법을 학습합니다. 수면 호흡법, 덕다이빙 기술, 기초 피닝 등을 배우게 됩니다.",
-            image: "/image/course/Lv1.jpg",
+            image: "/image/course/lv1.jpg",
             // certifications: ["PSA", "AIDA"],
             price: "100,000 ₩"
         },
@@ -119,7 +119,7 @@ export default function CoursePage() {
             depth: "#",
             duration: "3일",
             description: "심화된 프리다이빙 기술을 배우며, 더 깊은 수심에서의 다이빙을 연습합니다. 프리폴링 기술과 고급 피닝 기술을 습득하게 됩니다.",
-            image: "/image/course/Lv2.jpeg",
+            image: "/image/course/lv2.jpeg",
 
             price: "350,000 ₩"
         },
@@ -129,7 +129,7 @@ export default function CoursePage() {
             depth: "#",
             duration: "3일",
             description: "고급 프리다이빙 기술을 습득하고, 깊은 수심에서의 안전한 다이빙을 위한 과정입니다. 마우스필 기술과 고급 이퀄라이제이션을 학습합니다.",
-            image: "/image/course/Lv3.jpeg",
+            image: "/image/course/lv3.jpeg",
 
             price: "550,000 ₩"
         },
@@ -139,7 +139,7 @@ export default function CoursePage() {
             depth: "#",
             duration: "4일",
             description: "전문적인 프리다이버가 되기 위한 과정으로, 극한의 수심에서도 안전하게 다이빙할 수 있는 능력을 기릅니다.",
-            image: "/image/course/Lv4.jpeg",
+            image: "/image/course/lv4.jpeg",
             price: "750,000 ₩"
         },
         {
