@@ -371,7 +371,7 @@ export default function Free() {
                         priority={index < 2}
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          target.src = "/image/home/gallery/gallery1.jpg";
+                          target.src = "/image/home/gallery/gallery1.jpeg";
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
@@ -393,7 +393,7 @@ export default function Free() {
                             sizes="32px"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
-                              target.src = "/image/home/gallery/gallery1.jpg";
+                              target.src = "/image/home/gallery/gallery1.jpeg";
                             }}
                           />
                         </div>
@@ -434,13 +434,16 @@ export default function Free() {
                   viewport={{ once: true }}
                   className="aspect-square bg-gray-100 rounded-lg shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
                 >
-                  <Image
-                    src={`/image/home/gallery/gallery${i}.jpg`}
-                    alt={`갤러리 이미지 ${i}`}
-                    width={600}
-                    height={600}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                  <a href="/gallery">
+                    <Image
+                      src={`/image/home/gallery/gallery${i}.jpeg`}
+                      alt={`갤러리 이미지 ${i}`}
+                      width={600}
+                      height={600}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </a>
+
                 </motion.div>
               ))}
             </div>

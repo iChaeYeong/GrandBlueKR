@@ -36,7 +36,7 @@ interface Course {
     duration: string;
     description: string;
     image: string;
-    certifications: string[];
+    // certifications: string[];
     price?: string;
     isPackage?: boolean;
     packageOptions?: PackageOption[];
@@ -46,7 +46,6 @@ interface Course {
     mermaidOptions?: MermaidOption[];
     isScuba?: boolean;
     scubaOptions?: ScubaOption[];
-    pay?: string;
 }
 
 export default function CoursePage() {
@@ -99,11 +98,10 @@ export default function CoursePage() {
             name: "체험 다이빙",
             depth: "#",
             duration: "1일",
-            description: "프리다이빙을 처음 접하는 분들을 위한 체험 과정입니다. 기본적인 장비 사용법과 호흡법을 배우고 풀장에서 안전하게 프리다이빙을 체험해볼 수 있습니다.",
+            description: "기본적인 장비 사용법과 호흡법을 배우고 안전하게 프리다이빙을 처음 접하는 분들을 위한 체험 과정 3시간 풀장 프리다이빙 체험 및 수중촬영",
             image: "/image/course/experience.jpg",
-            certifications: [],
-            price: "50,000 ₩",
-            pay: "https://pay.naver.com/experience"
+
+            price: "50,000 ₩"
         },
         {
             id: "lv1",
@@ -112,9 +110,8 @@ export default function CoursePage() {
             duration: "1일",
             description: "프리다이빙의 기초를 배우는 과정으로, 기본적인 안전 수칙과 호흡법을 학습합니다. 수면 호흡법, 덕다이빙 기술, 기초 피닝 등을 배우게 됩니다.",
             image: "/image/course/Lv1.jpg",
-            certifications: ["AIDA", "PSA"],
-            price: "100,000 ₩",
-            pay: "https://pay.naver.com/lv1"
+            // certifications: ["PSA", "AIDA"],
+            price: "100,000 ₩"
         },
         {
             id: "lv2",
@@ -122,10 +119,9 @@ export default function CoursePage() {
             depth: "#",
             duration: "3일",
             description: "심화된 프리다이빙 기술을 배우며, 더 깊은 수심에서의 다이빙을 연습합니다. 프리폴링 기술과 고급 피닝 기술을 습득하게 됩니다.",
-            image: "/image/course/Lv2.jpg",
-            certifications: ["AIDA", "PSA"],
-            price: "350,000 ₩",
-            pay: "https://pay.naver.com/lv2"
+            image: "/image/course/Lv2.jpeg",
+
+            price: "350,000 ₩"
         },
         {
             id: "lv3",
@@ -134,9 +130,8 @@ export default function CoursePage() {
             duration: "3일",
             description: "고급 프리다이빙 기술을 습득하고, 깊은 수심에서의 안전한 다이빙을 위한 과정입니다. 마우스필 기술과 고급 이퀄라이제이션을 학습합니다.",
             image: "/image/course/Lv3.jpeg",
-            certifications: ["AIDA", "PSA"],
-            price: "550,000 ₩",
-            pay: "https://pay.naver.com/lv3"
+
+            price: "550,000 ₩"
         },
         {
             id: "lv4",
@@ -145,9 +140,7 @@ export default function CoursePage() {
             duration: "4일",
             description: "전문적인 프리다이버가 되기 위한 과정으로, 극한의 수심에서도 안전하게 다이빙할 수 있는 능력을 기릅니다.",
             image: "/image/course/Lv4.jpeg",
-            certifications: ["AIDA", "PSA"],
-            price: "750,000 ₩",
-            pay: "https://pay.naver.com/lv4"
+            price: "750,000 ₩"
         },
         {
             id: "instructor",
@@ -156,9 +149,8 @@ export default function CoursePage() {
             duration: "7일",
             description: "프리다이빙 강사가 되기 위한 전문 교육 과정입니다. 교육 방법론과 안전 관리, 응급 처치 등을 심도 있게 학습합니다.",
             image: "/image/course/Instructor.jpeg",
-            certifications: ["PSA"],
-            price: "1,500,000 ₩",
-            pay: "https://pay.naver.com/instructor"
+
+            price: "1,500,000 ₩"
         },
         {
             id: "youth",
@@ -167,9 +159,8 @@ export default function CoursePage() {
             duration: "#일",
             description: "만 6세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
             image: "/image/course/erp.jpg",
-            certifications: ["PSA", "AIDA"],
-            price: "250,000 ₩",
-            pay: "https://pay.naver.com/youth"
+
+            price: "250,000 ₩"
         },
         {
             id: "package",
@@ -177,8 +168,8 @@ export default function CoursePage() {
             depth: "#",
             duration: "기간 선택",
             description: "여러 레벨의 과정을 한 번에 수강하여 더 효율적으로 프리다이빙을 배워보세요. 패키지로 신청하시면 할인된 가격으로 수강하실 수 있습니다.",
-            image: "/image/course/package2.jpg",
-            certifications: ["AIDA", "PSA"],
+            image: "/image/course/package1.jpeg",
+
             isPackage: true,
             packageOptions: [
                 {
@@ -239,7 +230,7 @@ export default function CoursePage() {
             duration: "기간 선택",
             description: "인어와 같은 아름다운 수중 동작을 배우며, 프리다이빙의 즐거움을 경험하는 과정입니다. 기초부터 고급 과정까지 단계별로 학습할 수 있습니다.",
             image: "/image/course/mermaid.jpg",
-            certifications: ["PSA"],
+
             isMermaid: true,
             mermaidOptions: [
                 {
@@ -279,7 +270,7 @@ export default function CoursePage() {
             duration: "기간 선택",
             description: "스쿠버다이빙의 기초부터 전문가 과정까지 체계적으로 배울 수 있는 과정입니다. 안전하고 즐거운 수중 활동을 위한 필수 교육입니다.",
             image: "/image/course/scuba.jpg",
-            certifications: ["PSA"],
+
             isScuba: true,
             scubaOptions: [
                 {
@@ -502,48 +493,8 @@ export default function CoursePage() {
                                             </div>
                                         )}
 
-                                        {/* 자격증 발급 기관 - 체험 과정에서는 표시하지 않음 */}
-                                        {course.certifications && course.certifications.length > 0 && (
-                                            <div>
-                                                <p className="text-gray-500 mb-4">자격증 발급 기관</p>
-                                                <div className="flex gap-6">
-                                                    {course.certifications.map((cert) => (
-                                                        cert.toUpperCase() === "AIDA" && (
-                                                            <Image
-                                                                key="aida"
-                                                                src="/image/course/logo/aida_logo.png"
-                                                                alt="AIDA 로고"
-                                                                width={100}
-                                                                height={50}
-                                                                className="object-contain"
-                                                            />
-                                                        )
-                                                    ))}
-                                                    {course.certifications.map((cert) => (
-                                                        cert.toUpperCase() === "PSA" && (
-                                                            <Image
-                                                                key="psa"
-                                                                src="/image/course/logo/psa_logo.jpg"
-                                                                alt="PSA 로고"
-                                                                width={100}
-                                                                height={50}
-                                                                className="object-contain"
-                                                            />
-                                                        )
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        )}
-
                                         {/* 신청 버튼 */}
-                                        <button
-                                            onClick={() => {
-                                                if (course.pay) {
-                                                    window.open(course.pay, '_blank');
-                                                }
-                                            }}
-                                            className="w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors"
-                                        >
+                                        <button className="w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors">
                                             과정 신청하기
                                         </button>
                                     </div>
@@ -553,6 +504,23 @@ export default function CoursePage() {
                     </div>
                 </section>
             ))}
+            {/* 로고 섹션 */}
+            <div className="flex justify-end items-center gap-8 py-5">
+                <Image
+                    src="/image/course/logo/aida_logo.png"
+                    alt="AIDA 로고"
+                    width={120}
+                    height={60}
+                    className="object-contain bg-white/80 p-2 rounded-lg shadow-lg"
+                />
+                <Image
+                    src="/image/course/logo/psa_logo.jpg"
+                    alt="PSA 로고"
+                    width={120}
+                    height={60}
+                    className="object-contain bg-white/80 p-2 rounded-lg shadow-lg"
+                />
+            </div>
         </main>
     );
 }
