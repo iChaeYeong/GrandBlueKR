@@ -403,7 +403,7 @@ export default function Free() {
                         {review.content}
                       </p>
                       <div className="mt-auto pt-3 border-t border-gray-100 text-right">
-                        <a href={review.link} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 font-medium hover:underline cursor-pointer">더 보기 &rarr;</a>
+                        <a href={review.link} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 font-medium hover:underline cousor-pointer">더 보기 &rarr;</a>
                       </div>
                     </div>
                   </motion.div>

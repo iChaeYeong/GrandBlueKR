@@ -44,16 +44,17 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
         {
             title: "강습 과정",
             subItems: [
-                { name: "체험 다이빙", href: "/course#experience" },
-                { name: "Lv 1", href: "/course#lv1" },
-                { name: "Lv 2", href: "/course#lv2" },
-                { name: "Lv 3", href: "/course#lv3" },
-                { name: "Lv 4", href: "/course#lv4" },
-                { name: "Package", href: "/course#package" },
-                { name: "Instructor", href: "/course#instructor" },
-                { name: "Mermaid", href: "/course#mermaid" },
-                { name: "Scuba", href: "/course#scuba" },
-                { name: "ERP 응급처치", href: "/course#ERP" }
+                { name: "체험 다이빙", href: "/course?category=experience" },
+                { name: "Lv.1", href: "/course?category=lv1" },
+                { name: "Lv.2", href: "/course?category=lv2" },
+                { name: "Lv.3", href: "/course?category=lv3" },
+                { name: "Lv.4", href: "/course?category=lv4" },
+                { name: "Instructor", href: "/course?category=instructor" },
+                { name: "Youth FreeDiving", href: "/course?category=youth" },
+                { name: "Package", href: "/course?category=package" },
+                { name: "Mermaid", href: "/course?category=mermaid" },
+                { name: "Scuba", href: "/course?category=scuba" },
+                { name: "수중레저안전요원", href: "/course?category=leisure" }
             ]
         },
         // {

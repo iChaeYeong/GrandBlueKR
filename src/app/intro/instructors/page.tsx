@@ -29,12 +29,11 @@ export default function Instructors() {
                 instagram: "https://www.instagram.com/grandblue_habin/?__pwa=1"
             }
         },
-
         {
-            name: "방금식",
+            name: "김진근",
             title: "보조강사",
             image: "/image/intro/instructors/instructor-chaeyoung.png",
-            description: "방금식",
+            description: "김진근",
             certifications: [
                 "PSA Freediving Instructor",
                 "MermaidDiving",
@@ -73,10 +72,10 @@ export default function Instructors() {
             }
         },
         {
-            name: "이가람",
+            name: "이다희",
             title: "보조강사",
             image: "/image/intro/instructors/instructor-chaeyoung.png",
-            description: "이가람",
+            description: "이다희",
             certifications: [
                 "PSA머메이드다이빙 강사",
                 "PSA프리다이빙 강사",
