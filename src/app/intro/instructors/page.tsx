@@ -29,71 +29,71 @@ export default function Instructors() {
                 instagram: "https://www.instagram.com/grandblue_habin/?__pwa=1"
             }
         },
-        {
-            name: "김진근",
-            title: "보조강사",
-            image: "/image/intro/instructors/instructor-chaeyoung.png",
-            description: "김진근",
-            certifications: [
-                "PSA Freediving Instructor",
-                "MermaidDiving",
-                "First & CPR",
-                "ScubaDiving",
-                "Rescue",
-                "Twin Set",
-                "Advanced Nitrox",
-                "Nitrox Gas Blending",
-                "Dry Suit",
-                "해양안전교실",
-                "수중레저안전관리",
-                "︎Open Water Safety",
-                "Public Safety Diving Lv.2",
-                "FreeDiving",
-                "Underwater Photography",
-                "ScubaDiving",
-                "Advanced Buoyance Control",
-                "Full Face Mask",
-                "Ice Diving",
-                "Sport Wreck",
-                "Underwater Photography",
-                "Advanced Wreck Penetration",
-                "Openwater Sidmount",
-                "Narcosis Management Lv.2",
-                "Visual Inspection Technician",
-                "Swiftwater & flood Rescue",
-                "O2 Provider",
-                "스포츠심리상담사",
-                "잠수기능사"
-            ],
-            background: "bg-red-50/50",
-            social: {
-                kakao: "a",
-                instagram: "#"
-            }
-        },
-        {
-            name: "이다희",
-            title: "보조강사",
-            image: "/image/intro/instructors/instructor-chaeyoung.png",
-            description: "이다희",
-            certifications: [
-                "PSA머메이드다이빙 강사",
-                "PSA프리다이빙 강사",
-                "PSAI스쿠버강사",
-                "CPR응급처치 자격",
-                "오픈워터세이프티다이버",
-                "생활체육지도사2급"
-            ],
-            background: "bg-yellow-50/50",
-            social: {
-                kakao: "a",
-                instagram: "#"
-            }
-        },
+        // {
+        //     name: "김진근",
+        //     title: "보조강사",
+        //     image: "/image/intro/instructors/instructor-chaeyoung.png",
+        //     description: "김진근",
+        //     certifications: [
+        //         "PSA Freediving Instructor",
+        //         "MermaidDiving",
+        //         "First & CPR",
+        //         "ScubaDiving",
+        //         "Rescue",
+        //         "Twin Set",
+        //         "Advanced Nitrox",
+        //         "Nitrox Gas Blending",
+        //         "Dry Suit",
+        //         "해양안전교실",
+        //         "수중레저안전관리",
+        //         "︎Open Water Safety",
+        //         "Public Safety Diving Lv.2",
+        //         "FreeDiving",
+        //         "Underwater Photography",
+        //         "ScubaDiving",
+        //         "Advanced Buoyance Control",
+        //         "Full Face Mask",
+        //         "Ice Diving",
+        //         "Sport Wreck",
+        //         "Underwater Photography",
+        //         "Advanced Wreck Penetration",
+        //         "Openwater Sidmount",
+        //         "Narcosis Management Lv.2",
+        //         "Visual Inspection Technician",
+        //         "Swiftwater & flood Rescue",
+        //         "O2 Provider",
+        //         "스포츠심리상담사",
+        //         "잠수기능사"
+        //     ],
+        //     background: "bg-red-50/50",
+        //     social: {
+        //         kakao: "a",
+        //         instagram: "#"
+        //     }
+        // },
+        // {
+        //     name: "이다희",
+        //     title: "보조강사",
+        //     image: "/image/intro/instructors/instructor-chaeyoung.png",
+        //     description: "이다희",
+        //     certifications: [
+        //         "PSA머메이드다이빙 강사",
+        //         "PSA프리다이빙 강사",
+        //         "PSAI스쿠버강사",
+        //         "CPR응급처치 자격",
+        //         "오픈워터세이프티다이버",
+        //         "생활체육지도사2급"
+        //     ],
+        //     background: "bg-yellow-50/50",
+        //     social: {
+        //         kakao: "a",
+        //         instagram: "#"
+        //     }
+        // },
         {
             name: "이채영",
             title: "보조강사",
-            image: "/image/intro/instructors/instructor-chaeyoung.png",
+            image: "/image/intro/instructors/instructor-chaeyoung.jpeg",
             description: "안녕하세요 접니다. 이 사이트 제가 만들었써요오오오~~~~",
             certifications: [
                 "PSA Freediving Instructor",

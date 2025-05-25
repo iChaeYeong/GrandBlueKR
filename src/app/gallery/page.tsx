@@ -16,14 +16,24 @@ function getAltText(alt: string) {
 }
 
 const galleryImages = [
-
-
+    { src: "/image/gallery/tour/투어 - 보홀 투어 6.jpeg", alt: "보홀 투어", category: "tour" },
+    { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 1.jpeg", alt: "두류 다이빙 풀", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 패스나인 5.jpeg", alt: "패스나인", category: "poll" },
+    { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 2.jpeg", alt: "두류 다이빙 풀", category: "pool" },
+    { src: "/image/gallery/tour/투어 - 보홀 투어 7.jpeg", alt: "보홀 투어", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 보홀 투어 8.jpeg", alt: "보홀 투어", category: "tour" },
     { src: "/image/gallery/tour/투어 - 일본 요론섬 1.jpeg", alt: "일본 요론섬", category: "tour" },
     { src: "/image/gallery/tour/투어 - 일본 요론섬 2.jpeg", alt: "일본 요론섬", category: "tour" },
     { src: "/image/gallery/tour/투어 - 일본 요론섬 3.jpeg", alt: "일본 요론섬", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 화보 1.jpeg", alt: "화보", category: "pool" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 1.jpeg", alt: "수심트레이닝", category: "tour" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 2.jpeg", alt: "수심트레이닝", category: "tour" },
+    { src: "/image/gallery/pool/풀장 - 화이트 밸런스 2.jpeg", alt: "화이트 밸런스", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 화이트 밸런스 3.jpeg", alt: "화이트 밸런스", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 화이트 밸런스 4.jpeg", alt: "화이트 밸런스", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 화이트 밸런스 5.jpeg", alt: "화이트 밸런스", category: "pool" },
+    { src: "/image/gallery/tour/투어 - 일본 요론섬 4.jpeg", alt: "일본 요론섬", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 일본 요론섬 5.jpeg", alt: "일본 요론섬", category: "tour" },
     { src: "/image/gallery/tour/투어 - 보홀 투어 1.jpeg", alt: "보홀 투어", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 패스나인 3.jpeg", alt: "패스나인", category: "pool" },
     { src: "/image/gallery/tour/투어 - 수심트레이닝 3.jpeg", alt: "수심트레이닝", category: "tour" },
@@ -40,10 +50,16 @@ const galleryImages = [
     { src: "/image/gallery/pool/풀장 - 패스나인 2.jpeg", alt: "패스나인", category: "pool" },
     { src: "/image/gallery/tour/투어 - 보홀 투어 5.jpeg", alt: "보홀 투어", category: "tour" },
     { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 1.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
-    { src: "/image/gallery/tour/투어 - 보홀 투어 6.jpeg", alt: "보홀 투어", category: "tour" },
-    { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 1.jpeg", alt: "두류 다이빙 풀", category: "pool" },
-    { src: "/image/gallery/pool/풀장 - 패스나인 5.jpeg", alt: "패스나인", category: "poll" },
-    { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 2.jpeg", alt: "두류 다이빙 풀", category: "pool" }
+    { src: "/image/gallery/tour/투어 - 울릉도 1.jpeg", alt: "울릉도", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 3.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 4.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 5.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
+    { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 2.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
+    { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 3.jpeg", alt: "두류 다이빙 풀", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 딥스테이션 3.jpeg", alt: "딥스테이션", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 알프스 다이빙 1.jpeg", alt: "알프스 다이빙", category: "pool" },
+    { src: "/image/gallery/pool/풀장 - 패스나인 6.jpeg", alt: "패스나인", category: "pool" },
+
 ];
 
 export default function GalleryPage() {

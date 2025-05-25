@@ -9,7 +9,7 @@ export default function FreeDiving() {
             {/* 히어로 섹션 */}
             <section className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
                 <Image
-                    src="/image/intro/freediving/freediving-hero.jpg"
+                    src="/image/intro/freediving/freediving-hero.jpeg"
                     alt="프리다이빙 히어로 이미지"
                     fill
                     className="object-cover"
