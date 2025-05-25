@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "그랑블루 대구경북",
     description: "그랑블루 대구경북 프리다이빙 전문 강습",
-    images: ["https://www.grandblue.kr/image/hero.jpeg"],
+    images: ["https://www.grandblue.co.kr/image/hero.jpeg"],
   },
 };
 
