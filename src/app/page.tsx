@@ -434,7 +434,7 @@ export default function Free() {
                   viewport={{ once: true }}
                   className="aspect-square bg-gray-100 rounded-lg shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
                 >
-                  <a href="/gallery">
+                  <a href="/gallery/">
                     <Image
                       src={`/image/home/gallery/gallery${i}.jpeg`}
                       alt={`갤러리 이미지 ${i}`}
