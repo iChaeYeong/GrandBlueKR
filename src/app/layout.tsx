@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "그랑블루 대구경북",
     images: [
       {
-        url: "https://grandbluehabin.co.kr//image/hero.jpeg",
+        url: "https://grandbluehabin.co.kr/image/hero.jpeg",
         width: 1200,
         height: 630,
         alt: "그랑블루 대구경북 대표 이미지",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "그랑블루 대구경북",
     description: "그랑블루 대구경북 프리다이빙 전문 강습",
-    images: ["https://grandbluehabin.co.kr//image/hero.jpeg"],
+    images: ["https://grandbluehabin.co.kr/image/hero.jpeg"],
   },
 };
 
