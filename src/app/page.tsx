@@ -330,7 +330,7 @@ export default function Free() {
           </div>
 
           {/* 블로그 리뷰 섹션 */}
-          <div ref={reviewSectionRef} className="min-h-screen flex flex-col justify-center py-10 sm:py-16">
+          {/* <div ref={reviewSectionRef} className="min-h-screen flex flex-col justify-center py-10 sm:py-16">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -340,10 +340,10 @@ export default function Free() {
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">블로그 후기</h2>
               <p className="text-base sm:text-lg text-gray-600">그랑블루와 함께한 고객들의 생생한 후기를 확인하세요</p>
-            </motion.div>
+            </motion.div> */}
 
-            {/* 리뷰 그리드 (슬라이더 대신 고정 그리드) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 lg:px-8">
+          {/* 리뷰 그리드 (슬라이더 대신 고정 그리드) */}
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 lg:px-8">
               {blogReviews.map((review, index) => (
                 <motion.div
                   key={review.id}
@@ -354,14 +354,14 @@ export default function Free() {
                     duration: 0.8
                   }}
                   viewport={{ once: true }}
-                >
-                  {/* 리뷰 카드 */}
-                  <motion.div
+                > */}
+          {/* 리뷰 카드 */}
+          {/* <motion.div
                     className="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col border border-gray-100 hover:shadow-lg transition-shadow duration-300"
                     whileHover={{ y: -5, transition: { duration: 0.3 } }}
-                  >
-                    {/* 리뷰 이미지 */}
-                    <div className="relative h-48 sm:h-52 md:h-56 bg-gray-200">
+                  > */}
+          {/* 리뷰 이미지 */}
+          {/* <div className="relative h-48 sm:h-52 md:h-56 bg-gray-200">
                       <Image
                         src={review.image}
                         alt={review.title}
@@ -379,10 +379,10 @@ export default function Free() {
                         <h3 className="text-base sm:text-lg font-semibold mb-1 leading-tight line-clamp-2">{review.title}</h3>
                         <p className="text-xs sm:text-sm whitespace-pre-line opacity-90 line-clamp-1">{review.subtitle}</p>
                       </div>
-                    </div>
+                    </div> */}
 
-                    {/* 글쓴이 정보 & 내용 */}
-                    <div className="p-4 flex-grow flex flex-col">
+          {/* 글쓴이 정보 & 내용 */}
+          {/* <div className="p-4 flex-grow flex flex-col">
                       <div className="flex items-center mb-3">
                         <div className="relative w-8 h-8 rounded-full overflow-hidden mr-2 flex-shrink-0">
                           <Image
@@ -410,7 +410,7 @@ export default function Free() {
                 </motion.div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* 세 번째 컨텐츠 영역 */}
           <div className="min-h-screen flex flex-col justify-center py-10 sm:py-16">
