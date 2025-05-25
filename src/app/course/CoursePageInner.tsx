@@ -233,49 +233,52 @@ export default function CoursePageInner() {
                     id: "package12",
                     name: "Level 1 + 2 패키지",
                     duration: "3",
-                    originalPrice: "450,000 ₩",
+                    // originalPrice: "450,000 ₩",
+                    originalPrice: "",
                     packagePrice: "350,000 ₩",
-                    description: ""
+                    description: "입문부터 기본 과정까지 한 번에 배울 수 있는 패키지"
                 },
                 {
                     id: "package123",
                     name: "Level 1 + 2 + 3 패키지",
-                    duration: "5",
-                    originalPrice: "1,000,000 ₩",
+                    duration: "# 일",
+                    // originalPrice: "1,000,000 ₩",
+                    originalPrice: "",
                     packagePrice: "800,000 ₩",
-                    description: ""
+                    description: "입문, 기본, 심화 과정까지 모두 포함된 패키지"
                 },
                 {
                     id: "package23",
                     name: "Level 2 + 3 패키지",
-                    duration: "7",
-                    originalPrice: "# ₩",
+                    duration: "## 일",
+                    originalPrice: "",
                     packagePrice: "# ₩",
-                    description: ""
+                    description: "기본부터 심화 과정까지 빠르게 배우는 패키지"
                 },
                 {
                     id: "package1234",
                     name: "Level 1 + 2 + 3 + 4 패키지",
-                    duration: "9",
-                    originalPrice: "# ₩",
+                    duration: "### 일",
+                    originalPrice: "",
                     packagePrice: "# ₩",
-                    description: ""
+                    description: "입문부터 전문가 과정까지 한 번에 마스터"
                 },
                 {
                     id: "package234",
                     name: "Level 2 + 3 +4 패키지",
-                    duration: "",
-                    originalPrice: "# ₩",
+                    duration: "#### 일",
+                    originalPrice: "",
                     packagePrice: "# ₩",
-                    description: ""
+                    description: "기본, 심화, 전문가 과정 연계 패키지"
                 },
                 {
                     id: "package34",
                     name: "Level 3 + 4 패키지",
-                    duration: "",
-                    originalPrice: "1,300,000 ₩",
+                    duration: "## 일",
+                    // originalPrice: "1,300,000 ₩",
+                    originalPrice: "",
                     packagePrice: "1,100,000 ₩",
-                    description: ""
+                    description: "심화와 전문가 과정을 한 번에"
                 }
             ]
         },
@@ -290,29 +293,29 @@ export default function CoursePageInner() {
             mermaidOptions: [
                 {
                     id: "mermaid1",
-                    name: "체험 (3시간)",
+                    name: "체험",
                     duration: "3시간",
                     price: "80,000 ₩",
                     description: "수중공연에 필요한 움직임 체험해보기,가라앉기, 인어꼬리 착용해보기, 수중포즈취해보기"
                 },
                 {
                     id: "mermaid2",
-                    name: "베이직머메이드(3시간)",
+                    name: "베이직머메이드",
                     duration: "3시간",
                     price: "250,000 ₩",
                     description: "얕믄물에서 수중 공연시 필요한 기본적인 기술과 안전기술 배워보기"
                 },
                 {
                     id: "mermaid3",
-                    name: "머메이드 (이론+풀장 2회)",
-                    duration: "6시간",
+                    name: "머메이드",
+                    duration: "6시간 (이론+풀장 2회)",
                     price: "300,000 ₩",
                     description: "다양한 수중기술과 안전기술을 직접 수행"
                 },
                 {
                     id: "mermaid4",
-                    name: "오션 머메이드 (이론+풀장 3회)",
-                    duration: "9시간",
+                    name: "오션 머메이드 ",
+                    duration: "9시간 (이론+풀장 3회)",
                     price: "400,000 ₩",
                     description: "심화된 기술을 깊은물에서 시행,저항과 동작이 제한되는 아웃핏 착용후 기술 구사, 작품 만들어보기, 버디 구조하기"
                 }
@@ -474,7 +477,11 @@ export default function CoursePageInner() {
                                                     <p className="text-xl font-bold text-gray-900">
                                                         {course.id === 'package' && course.packageOptions
                                                             ? course.packageOptions.find(opt => opt.id === selectedPackage)?.duration
-                                                            : course.duration}
+                                                            : course.isMermaid && course.mermaidOptions
+                                                                ? course.mermaidOptions.find(opt => opt.id === selectedMermaid)?.duration
+                                                                : course.isScuba && course.scubaOptions
+                                                                    ? course.scubaOptions.find(opt => opt.id === selectedScuba)?.duration
+                                                                    : course.duration}
                                                     </p>
                                                 </div>
                                             </div>
@@ -502,7 +509,6 @@ export default function CoursePageInner() {
                                                                                 <p className="text-xl font-bold text-blue-600">{option.packagePrice}</p>
                                                                             </div>
                                                                         </div>
-                                                                        <p className="text-sm text-gray-600">{option.description}</p>
                                                                     </div>
                                                                 </label>
                                                             </div>
@@ -528,8 +534,6 @@ export default function CoursePageInner() {
                                                                             <h3 className="text-lg font-medium text-gray-900">{option.name}</h3>
                                                                             <p className="text-xl font-bold text-blue-600">{option.price}</p>
                                                                         </div>
-                                                                        <p className="text-sm text-gray-600">{option.description}</p>
-                                                                        <p className="text-sm text-gray-500 mt-1">교육시간: {option.duration}</p>
                                                                     </div>
                                                                 </label>
                                                             </div>
@@ -555,8 +559,6 @@ export default function CoursePageInner() {
                                                                             <h3 className="text-lg font-medium text-gray-900">{option.name}</h3>
                                                                             <p className="text-xl font-bold text-blue-600">{option.price}</p>
                                                                         </div>
-                                                                        <p className="text-sm text-gray-600">{option.description}</p>
-                                                                        <p className="text-sm text-gray-500 mt-1">교육시간: {option.duration}</p>
                                                                     </div>
                                                                 </label>
                                                             </div>
@@ -573,9 +575,14 @@ export default function CoursePageInner() {
                                             )}
 
                                             {/* 신청 버튼 */}
-                                            <button className="w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors cursor-pointer">
+                                            <a
+                                                href="https://open.kakao.com/o/simxbKLg"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="block w-full py-4 px-6 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-colors cursor-pointer text-center"
+                                            >
                                                 과정 신청하기
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -585,15 +592,15 @@ export default function CoursePageInner() {
                 ))}
             {/* 조건 안내 리스트 */}
             {courses.find(course => course.id === activeSection && course.showCondition) && (
-                <div className="mb-20 w-full bg-gray-50 py-16 px-4">
-                    <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
+                <div className="mb-10 w-full bg-gray-50 py-15 px-4">
+                    <div className="mt- flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
                         {courses.find(course => course.id === activeSection)?.showCondition && (
                             <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
-                                <div className="flex flex-col items-center mb-6" style={{ minHeight: 110 }}>
-                                    <div className="flex items-center justify-center" style={{ width: 120, height: 80 }}>
+                                <div className="flex flex-col items-center mb-6" style={{ minHeight: 10 }}>
+                                    <div className="flex items-center justify-center" style={{ width: 150, height: 80 }}>
                                     </div>
                                 </div>
-                                <ul className="list-disc pl-6 space-y-3">
+                                <ul className="list-disc pl-20 space-y-3">
                                     {Array.isArray(courses.find(course => course.id === activeSection)?.condition) &&
                                         courses.find(course => course.id === activeSection)?.condition?.map((item, idx) => (
                                             <li key={idx} className="text-gray-700 text-base">{item}</li>
@@ -617,6 +624,51 @@ export default function CoursePageInner() {
                                 </div>
                             </div>
                         )}
+                    </div>
+                </div>
+            )}
+            {activeSection === 'package' && (courses.find(course => course.id === 'package')?.packageOptions ?? []).length > 0 && (
+                <div className="mb-20 w-full bg-gray-50 py-16 px-4">
+                    <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
+                        <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
+                            {(courses.find(course => course.id === 'package')?.packageOptions ?? []).map((option) => (
+                                <div key={option.id} className="mb-8 last:mb-0">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{option.name}</h3>
+                                    <p className="text-base text-gray-700 mb-2">{option.description}</p>
+                                    <p className="text-sm text-gray-500 mb-4">교육 기간: {option.duration}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+            {activeSection === 'mermaid' && (courses.find(course => course.id === 'mermaid')?.mermaidOptions ?? []).length > 0 && (
+                <div className="mb-20 w-full bg-gray-50 py-16 px-4">
+                    <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
+                        <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
+                            {(courses.find(course => course.id === 'mermaid')?.mermaidOptions ?? []).map((option) => (
+                                <div key={option.id} className="mb-8 last:mb-0">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{option.name}</h3>
+                                    <p className="text-base text-gray-700 mb-2">{option.description}</p>
+                                    <p className="text-sm text-gray-500 mb-4">교육 기간: {option.duration}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+            {activeSection === 'scuba' && (courses.find(course => course.id === 'scuba')?.scubaOptions ?? []).length > 0 && (
+                <div className="mb-20 w-full bg-gray-50 py-16 px-4">
+                    <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
+                        <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
+                            {(courses.find(course => course.id === 'scuba')?.scubaOptions ?? []).map((option) => (
+                                <div key={option.id} className="mb-8 last:mb-0">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{option.name}</h3>
+                                    <p className="text-base text-gray-700 mb-2">{option.description}</p>
+                                    <p className="text-sm text-gray-500 mb-4">교육 기간: {option.duration}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             )}
