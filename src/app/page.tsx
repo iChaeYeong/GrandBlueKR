@@ -17,17 +17,17 @@ export default function Free() {
     {
       title: "그랑블루 하빈",
       description: "그랑블루대구경북지점 | 프리다이빙 | 스쿠버 | 투어 ",
-      image: "image/home/slider/freebg12.jpeg"
+      image: "/image/home/slider/freebg12.jpeg"
     },
     {
       title: "프리다이빙",
       description: "AIDA & PSA 강습 | 수중촬영 | 어린이 강습 | 머메이드 ",
-      image: "image/home/slider/freebg2.jpeg"
+      image: "/image/home/slider/freebg2.jpeg"
     },
     {
       title: "투어 프로그램",
       description: "국내투어 | 해외투어 | 해루질 | 보홀 | 아쿠아리움 ",
-      image: "image/home/slider/freebg11.jpeg"
+      image: "/image/home/slider/freebg11.jpeg"
     }
   ];
 
