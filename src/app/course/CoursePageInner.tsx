@@ -236,7 +236,7 @@ export default function CoursePageInner() {
             name: "Youth FreeDiving",
             depth: "유스 프리다이빙",
             duration: "기간 선택",
-            description: "만 4세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
+            description: "만 4세부터 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
             image: "/image/course/erp.jpg",
             isYouth: true,
             youthOptions: [

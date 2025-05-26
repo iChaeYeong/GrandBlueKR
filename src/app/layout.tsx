@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <meta name="naver-site-verification" content="998c16124f172962600da6e710368978ad757728" />
+        <meta name="naver-site-verification" content="cdf341ced157907d3022974d2a6f29bca0ce95a5" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <Script
           id="channel-talk"

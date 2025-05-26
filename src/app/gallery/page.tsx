@@ -57,7 +57,6 @@ const galleryImages = [
     { src: "/image/gallery/tour/투어 - 울릉도 1.jpeg", alt: "울릉도", category: "tour" },
     { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 3.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
     { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 4.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
-    { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 5.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
     { src: "/image/gallery/tour/투어 - 제주 아쿠아플라넷 2.jpeg", alt: "제주 아쿠아플라넷", category: "tour" },
     { src: "/image/gallery/pool/풀장 - 두류 다이빙 풀 3.jpeg", alt: "두류 다이빙 풀", category: "pool" },
     { src: "/image/gallery/pool/풀장 - 딥스테이션 3.jpeg", alt: "딥스테이션", category: "pool" },
