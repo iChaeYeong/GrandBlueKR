@@ -30,6 +30,14 @@ interface ScubaOption {
     description: string;
 }
 
+interface YouthOption {
+    id: string;
+    name: string;
+    duration: string;
+    price: string;
+    description: string;
+}
+
 interface Course {
     id: string;
     name: string;
@@ -47,6 +55,8 @@ interface Course {
     mermaidOptions?: MermaidOption[];
     isScuba?: boolean;
     scubaOptions?: ScubaOption[];
+    isYouth?: boolean;
+    youthOptions?: YouthOption[];
     examUrl?: string;
     showCondition?: boolean;
     condition?: string[];
@@ -58,6 +68,7 @@ export default function CoursePageInner() {
     const [selectedPackage, setSelectedPackage] = useState('package12');
     const [selectedMermaid, setSelectedMermaid] = useState('mermaid1');
     const [selectedScuba, setSelectedScuba] = useState('scuba1');
+    const [selectedYouth, setSelectedYouth] = useState('youth1');
 
     useEffect(() => {
         const category = searchParams.get('category');
@@ -111,7 +122,7 @@ export default function CoursePageInner() {
             name: "Lv.1",
             depth: "이론, 제한수역, 해양수역",
             duration: "1일",
-            description: "프리다이빙의 기초를 배우는 과정으로, 기본적인 안전 수칙과 호흡법을 학습합니다. 수면 호흡법, 덕다이빙 기술, 기초 피닝 등을 배우게 됩니다.",
+            description: "프리다이빙의 기초를 배우는 과정",
             image: "/image/course/lv1.jpeg",
             // certifications: ["PSA", "AIDA"],
             price: "100,000 ₩",
@@ -140,6 +151,7 @@ export default function CoursePageInner() {
             examUrl: "/course/lv2",
             showCondition: true,
             condition: [
+                "자격증 발급비 별도",
                 "이론수업 후 풀장 실습 위주 교육",
                 "라이센스 취득시 까지 무제한 트레이닝 제공",
                 "프리다이빙 호흡법",
@@ -160,7 +172,7 @@ export default function CoursePageInner() {
             duration: "3일",
             description: "프리다이빙의 꽃 '프리폴'을 배우는 과정",
             image: "/image/course/lv3.jpeg",
-            price: "550,000 ₩",
+            price: "500,000 ₩",
             examUrl: "https://yourdomain.com/exam/lv3",
             showCondition: true,
             condition: [
@@ -183,7 +195,7 @@ export default function CoursePageInner() {
             duration: "4일",
             description: "보조강사 레벨의 프리다이빙 과정",
             image: "/image/course/lv4.jpeg",
-            price: "750,000 ₩",
+            price: "700,000 ₩",
             showCondition: true,
             condition: [
                 "이론수업 후 풀장 실습 위주 교육",
@@ -191,7 +203,7 @@ export default function CoursePageInner() {
                 "FRC(딥 다이빙)",
                 "마우스필",
                 "부이 설치 밎 매듭법",
-                "프리다이빙의 꽃 '프리폴'",
+                "수중 잠영 턴, 부력, 토잉",
                 "수면 무호흡(Static Apnea)",
                 "수직입수 덕다이브 (CWT)",
                 "자유하강 (Free Immersion)",
@@ -205,80 +217,104 @@ export default function CoursePageInner() {
             name: "Instructor",
             depth: "별도 문의",
             duration: "7일",
-            description: "프리다이빙 강사가 되기 위한 전문 교육 과정입니다. 교육 방법론과 안전 관리, 응급 처치 등을 심도 있게 학습합니다.",
+            description: `프리다이빙 강사가 되기 위한 전문 교육 과정`,
             image: "/image/course/Instructor.jpeg",
             price: "1,500,000 ₩",
-            examUrl: "https://yourdomain.com/exam/instructor"
+            showCondition: true,
+            condition: [
+                "교육 방법론과 안전 관리, 응급 처치 등을 심도 있게 학습",
+                "쉽고 재미있는 수업과 바쁜 직장인을 위한 온라인 녹화영상 제공",
+                "수강생 개인 수준별 맞춤 교육",
+                "프리다이빙 레벨3 이상이면 누구나 신청 가능",
+                "타단체 강사 교차과정 희망자 누구나"
+
+
+            ]
         },
         {
             id: "youth",
             name: "Youth FreeDiving",
             depth: "유스 프리다이빙",
-            duration: "#일",
-            description: "만 6세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
+            duration: "기간 선택",
+            description: "만 4세~만 14세 어린이를 위한 안전하고 재미있는 맞춤형 프로그램",
             image: "/image/course/erp.jpg",
-            price: "250,000 ₩",
-            examUrl: "https://yourdomain.com/exam/youth"
+            isYouth: true,
+            youthOptions: [
+                {
+                    id: "youth1",
+                    name: "유스 프리다이빙 1레벨",
+                    duration: "1일",
+                    price: "200,000 ₩",
+                    description: "프리다이빙 기초와 안전을 배우는 어린이 맞춤 과정"
+                },
+                {
+                    id: "youth2",
+                    name: "유스 프리다이빙 2레벨",
+                    duration: "2일",
+                    price: "400,000 ₩",
+                    description: "심화 기술과 구조법까지 배우는 어린이 심화 과정"
+                }
+            ]
         },
         {
             id: "package",
             name: "Package",
             depth: "이론, 제한수역, 해양수역",
             duration: "기간 선택",
-            description: "여러 레벨의 과정을 한 번에 수강하여 더 효율적으로 프리다이빙을 배워보세요. 패키지로 신청하시면 할인된 가격으로 수강하실 수 있습니다.",
+            description: `여러 레벨의 과정을 한번에 수강하여 더 효율적으로 프리다이빙을 배우는 과정 패키지로 신청하시면 할인된 가격으로 수강 가능`,
             image: "/image/course/package1.jpeg",
             isPackage: true,
             packageOptions: [
                 {
                     id: "package12",
                     name: "Level 1 + 2 패키지",
-                    duration: "3",
+                    duration: "3 일",
                     // originalPrice: "450,000 ₩",
                     originalPrice: "",
-                    packagePrice: "350,000 ₩",
-                    description: "입문부터 기본 과정까지 한 번에 배울 수 있는 패키지"
+                    packagePrice: "별도 문의",
+                    description: "입문부터 기본 과정까지 한 번에 배울수 있는 패키지"
                 },
                 {
                     id: "package123",
                     name: "Level 1 + 2 + 3 패키지",
-                    duration: "# 일",
+                    duration: "7 일",
                     // originalPrice: "1,000,000 ₩",
                     originalPrice: "",
-                    packagePrice: "800,000 ₩",
-                    description: "입문, 기본, 심화 과정까지 모두 포함된 패키지"
+                    packagePrice: "별도 문의",
+                    description: "입문부터 중급 과정까지 한 번에 배울 수 있는 패키지"
                 },
                 {
                     id: "package23",
                     name: "Level 2 + 3 패키지",
-                    duration: "## 일",
+                    duration: "6 일",
                     originalPrice: "",
-                    packagePrice: "# ₩",
-                    description: "기본부터 심화 과정까지 빠르게 배우는 패키지"
+                    packagePrice: "별도 문의",
+                    description: "기본부터 중급 과정까지 빠르게 배우는 패키지"
                 },
                 {
                     id: "package1234",
                     name: "Level 1 + 2 + 3 + 4 패키지",
-                    duration: "### 일",
+                    duration: "11 일",
                     originalPrice: "",
-                    packagePrice: "# ₩",
-                    description: "입문부터 전문가 과정까지 한 번에 마스터"
+                    packagePrice: "별도 문의",
+                    description: "입문부터 보조 강사 과정까지 배울 수 있는 패키지"
                 },
                 {
                     id: "package234",
                     name: "Level 2 + 3 +4 패키지",
-                    duration: "#### 일",
+                    duration: "10 일",
                     originalPrice: "",
-                    packagePrice: "# ₩",
-                    description: "기본, 심화, 전문가 과정 연계 패키지"
+                    packagePrice: "별도 문의",
+                    description: "초급부터 보조 강사 과정까지 배울 수 있는 패키지"
                 },
                 {
                     id: "package34",
                     name: "Level 3 + 4 패키지",
-                    duration: "## 일",
+                    duration: "7 일",
                     // originalPrice: "1,300,000 ₩",
                     originalPrice: "",
-                    packagePrice: "1,100,000 ₩",
-                    description: "심화와 전문가 과정을 한 번에"
+                    packagePrice: "별도 문의",
+                    description: "중급부터 보조 강사 과정까지 배울 수 있는 패키지"
                 }
             ]
         },
@@ -326,7 +362,7 @@ export default function CoursePageInner() {
             name: "Scuba",
             depth: "",
             duration: "기간 선택",
-            description: "스쿠버다이빙의 기초부터 전문가 과정까지 체계적으로 배울 수 있는 과정입니다. 안전하고 즐거운 수중 활동을 위한 필수 교육입니다.",
+            description: "스쿠버다이빙의 기초부터 전문가 과정까지 체계적으로 배울 수 있는 과정 안전하고 즐거운 수중 활동을 위한 교육",
             image: "/image/course/scuba.jpeg",
             isScuba: true,
             scubaOptions: [
@@ -340,23 +376,23 @@ export default function CoursePageInner() {
                 {
                     id: "scuba2",
                     name: "오픈워터",
-                    duration: "#일",
+                    duration: "6 일",
                     price: "500,000 ₩",
-                    description: "스쿠버다이빙의 기초를 배우는 자격증 과정입니다."
+                    description: "다이빙 준비, 계획, 수중 안전스킬 장비관리 방법을 배우는 입문 과정"
                 },
                 {
                     id: "scuba3",
                     name: "어드밴스드 오픈워터",
-                    duration: "#일",
+                    duration: "24 로그",
                     price: "800,000 ₩",
-                    description: "다양한 환경에서의 다이빙 기술을 배우는 과정입니다."
+                    description: "수중기술의 레벨업, 깊은 수심 진행 방법, 수중길 찾기 등을 배우는 고급 과정"
                 },
                 {
                     id: "scuba4",
                     name: "레스큐 다이버",
-                    duration: "#일",
+                    duration: "3 일",
                     price: "400,000 ₩",
-                    description: "응급 상황 대처와 구조 기술을 배우는 과정입니다."
+                    description: "사고예방에 관하여 생리적, 기술적 부분을 다루고 사고 발생시 직접 구조하는 과정"
                 }
             ]
         },
@@ -364,24 +400,22 @@ export default function CoursePageInner() {
             id: "leisure",
             name: "수중레저안전요원",
             depth: "이론, 제한수역, 해양수역",
-            duration: "2일",
+            duration: "1 일",
             description: "생명의 보고, 바다를 탐험하는 과정",
             image: "/image/course/leisure.jpeg",
-            price: "750,000 ₩",
+            price: "400,000 ₩",
             showCondition: true,
             condition: [
                 "이론수업 후 풀장 실습 위주 교육",
-                "라이센스 취득시 까지 무제한 트레이닝 제공",
-                "FRC(딥 다이빙)",
-                "마우스필",
-                "부이 설치 밎 매듭법",
-                "프리다이빙의 꽃 '프리폴'",
-                "수면 무호흡(Static Apnea)",
+                "스노쿨링 운영법",
+                "프리다이빙 호흡법",
                 "수직입수 덕다이브 (CWT)",
                 "자유하강 (Free Immersion)",
-                "수평 잠영 (Dynamic Apnea)",
-                "수중 잠영 턴, 부력 토잉",
-                "다이버 구조 하기(Rescue)"
+                "다이버 구조 하기(Rescue), 토잉",
+                "다이버 수중 구조 ",
+                "1km 휴식 없는 핀 수영",
+                "다이버 수면 끌기 100M",
+
             ]
         }
     ];
@@ -461,7 +495,7 @@ export default function CoursePageInner() {
                                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                                             {course.name}
                                         </h2>
-                                        <p className="text-lg font-semibold text-gray-600 mb-8 flex-grow">
+                                        <p style={{ whiteSpace: "pre-line" }} className="text-lg font-semibold text-gray-600 mb-8 flex-grow">
                                             {course.description}
                                         </p>
 
@@ -481,7 +515,9 @@ export default function CoursePageInner() {
                                                                 ? course.mermaidOptions.find(opt => opt.id === selectedMermaid)?.duration
                                                                 : course.isScuba && course.scubaOptions
                                                                     ? course.scubaOptions.find(opt => opt.id === selectedScuba)?.duration
-                                                                    : course.duration}
+                                                                    : course.isYouth && course.youthOptions
+                                                                        ? course.youthOptions.find(opt => opt.id === selectedYouth)?.duration
+                                                                        : course.duration}
                                                     </p>
                                                 </div>
                                             </div>
@@ -565,11 +601,39 @@ export default function CoursePageInner() {
                                                         ))}
                                                     </div>
                                                 </div>
+                                            ) : course.isYouth && course.youthOptions ? (
+                                                <div className="space-y-6">
+                                                    <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+                                                        {course.youthOptions.map((option) => (
+                                                            <div key={option.id} className="mb-4 last:mb-0">
+                                                                <label className="flex items-start space-x-4 cursor-pointer">
+                                                                    <input
+                                                                        type="radio"
+                                                                        name="youth-option"
+                                                                        value={option.id}
+                                                                        checked={selectedYouth === option.id}
+                                                                        onChange={(e) => setSelectedYouth(e.target.value)}
+                                                                        className="mt-1.5"
+                                                                    />
+                                                                    <div className="flex-1">
+                                                                        <div className="flex justify-between items-center mb-2">
+                                                                            <h3 className="text-lg font-medium text-gray-900">{option.name}</h3>
+                                                                            <p className="text-xl font-bold text-blue-600">{option.price}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
                                             ) : (
                                                 <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
-                                                    <div className="flex justify-between items-center">
-                                                        <p className="text-blue-600 font-medium">교육비</p>
-                                                        <p className="text-2xl font-bold text-blue-600">{course.price}</p>
+                                                    <div className="flex flex-col">
+                                                        <div className="flex justify-between items-center">
+                                                            <p className="text-blue-600 font-medium">교육비</p>
+                                                            <p className="text-2xl font-bold text-blue-600">{course.price}</p>
+                                                        </div>
+                                                        <p className="text-sm text-gray-500 mt-2">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             )}
@@ -662,6 +726,21 @@ export default function CoursePageInner() {
                     <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
                         <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
                             {(courses.find(course => course.id === 'scuba')?.scubaOptions ?? []).map((option) => (
+                                <div key={option.id} className="mb-8 last:mb-0">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{option.name}</h3>
+                                    <p className="text-base text-gray-700 mb-2">{option.description}</p>
+                                    <p className="text-sm text-gray-500 mb-4">교육 기간: {option.duration}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+            {activeSection === 'youth' && (courses.find(course => course.id === 'youth')?.youthOptions ?? []).length > 0 && (
+                <div className="mb-20 w-full bg-gray-50 py-16 px-4">
+                    <div className="mt-12 flex flex-col md:flex-row gap-8 w-full max-w-3xl mx-auto justify-center">
+                        <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow">
+                            {(courses.find(course => course.id === 'youth')?.youthOptions ?? []).map((option) => (
                                 <div key={option.id} className="mb-8 last:mb-0">
                                     <h3 className="text-xl font-bold text-gray-900 mb-1">{option.name}</h3>
                                     <p className="text-base text-gray-700 mb-2">{option.description}</p>

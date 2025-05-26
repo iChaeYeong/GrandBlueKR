@@ -93,10 +93,13 @@ export default function Instructors() {
         {
             name: "이채영",
             title: "보조강사",
-            image: "/image/intro/instructors/instructor-chaeyoung.jpeg",
-            description: "안녕하세요 접니다. 이 사이트 제가 만들었써요오오오~~~~",
+            image: "/image/intro/instructors/instructor-chaeyoung.jpeg/",
+            description: "그랑블루 대구경북, 보조강사 이채영 입니다.",
             certifications: [
                 "PSA Freediving Instructor",
+                "PSA First Aid",
+                "CPR and Emergency Oxygen for Adult",
+                "Children and Infant Instructor"
             ],
             background: "bg-green-50/50",
             social: {

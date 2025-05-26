@@ -77,10 +77,10 @@ export default function OverlayMenu({ isOpen, onClose }: OverlayMenuProps) {
         {
             title: "스토어",
             subItems: [
-                { name: "N \- 스토어", href: "/store/freediving" },
+                { name: "N \- 스토어", href: "/404" },
                 { name: "숨고", href: "https://www.soomgo.com/profile/users/1172930" },
                 // { name: "다이빙 풀장", href: "/store/pool" },
-                { name: "투어", href: "/store/tour" }
+                { name: "투어", href: "/404" }
             ]
         }
     ];
