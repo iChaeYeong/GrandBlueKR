@@ -42,10 +42,10 @@ export default function Tour() {
                             className="relative h-[320px] sm:h-[400px] rounded-xl overflow-hidden shadow-lg"
                         >
                             <Image
-                                src="/image/intro/tour/tour1.jpg"
+                                src="/image/intro/tour/image1.jpeg"
                                 alt="투어 활동 이미지"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-[center_60%]"
                             />
                         </motion.div>
                         {/* 오른쪽: 텍스트 */}

@@ -323,7 +323,7 @@ export default function CoursePageInner() {
             name: "Mermaid",
             depth: "",
             duration: "기간 선택",
-            description: "인어와 같은 아름다운 수중 동작을 배우며, 프리다이빙의 즐거움을 경험하는 과정입니다. 기초부터 고급 과정까지 단계별로 학습할 수 있습니다.",
+            description: "인어와 같은 아름다운 수중 동작을 배우는 과정",
             image: "/image/course/mermaid.jpg",
             isMermaid: true,
             mermaidOptions: [
@@ -633,7 +633,7 @@ export default function CoursePageInner() {
                                                             <p className="text-blue-600 font-medium">교육비</p>
                                                             <p className="text-2xl font-bold text-blue-600">{course.price}</p>
                                                         </div>
-                                                        <p className="text-sm text-gray-500 mt-2">※ 자격증 발급비 별도</p>
+                                                        <p className="text-sm text-gray-500 mt-2 text-right">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             )}
@@ -664,7 +664,7 @@ export default function CoursePageInner() {
                                     <div className="flex items-center justify-center" style={{ width: 150, height: 80 }}>
                                     </div>
                                 </div>
-                                <ul className="list-disc pl-20 space-y-3">
+                                <ul className="list-disc pl-10 space-y-3">
                                     {Array.isArray(courses.find(course => course.id === activeSection)?.condition) &&
                                         courses.find(course => course.id === activeSection)?.condition?.map((item, idx) => (
                                             <li key={idx} className="text-gray-700 text-base">{item}</li>
