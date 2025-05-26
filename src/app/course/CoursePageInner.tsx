@@ -549,6 +549,7 @@ export default function CoursePageInner() {
                                                                 </label>
                                                             </div>
                                                         ))}
+                                                        <p className="text-sm text-gray-500 mt-2 text-right">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             ) : course.isMermaid && course.mermaidOptions ? (
@@ -574,6 +575,7 @@ export default function CoursePageInner() {
                                                                 </label>
                                                             </div>
                                                         ))}
+                                                        <p className="text-sm text-gray-500 mt-2 text-right">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             ) : course.isScuba && course.scubaOptions ? (
@@ -599,6 +601,7 @@ export default function CoursePageInner() {
                                                                 </label>
                                                             </div>
                                                         ))}
+                                                        <p className="text-sm text-gray-500 mt-2 text-right">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             ) : course.isYouth && course.youthOptions ? (
@@ -624,6 +627,7 @@ export default function CoursePageInner() {
                                                                 </label>
                                                             </div>
                                                         ))}
+                                                        <p className="text-sm text-gray-500 mt-2 text-right">※ 자격증 발급비 별도</p>
                                                     </div>
                                                 </div>
                                             ) : (
