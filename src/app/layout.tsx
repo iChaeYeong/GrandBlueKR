@@ -19,22 +19,21 @@ export const metadata: Metadata = {
   title: "그랑블루 대구경북",
   description: "그랑블루 대구경북 프리다이빙 전문 강습",
   icons: {
-    icon: '/grandblue.svg',
+    icon: "/favicon.jpg",
+    apple: "/iphone_button.jpg",
   },
   openGraph: {
     title: "그랑블루 대구경북",
     description: "그랑블루 대구경북 프리다이빙 전문 강습",
-    url: "https://grandbluehabin.co.kr/",
-    siteName: "그랑블루 대구경북",
+    url: "https://grandbluehabin.co.kr",
     images: [
       {
         url: "https://grandbluehabin.co.kr/hero.jpeg",
         width: 1200,
         height: 630,
-        alt: "그랑블루 대구경북 대표 이미지",
+        alt: "그랑블루 대구경북",
       },
     ],
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
