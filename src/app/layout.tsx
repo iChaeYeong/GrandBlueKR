@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "그랑블루 대구경북",
   description: "그랑블루 대구경북 프리다이빙 전문 강습",
   icons: {
-    icon: "/favicon.jpg",
+    icon: "/favicon.png",
     apple: "/iphone_button.jpg",
   },
   openGraph: {
