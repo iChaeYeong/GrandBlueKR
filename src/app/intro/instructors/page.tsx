@@ -33,7 +33,7 @@ export default function Instructors() {
             name: "이다희",
             title: "강사",
             image: "/image/intro/instructors/instructor-dahee.jpeg",
-            description: "이다희",
+            description: "",
             certifications: [
                 "PSA Freediving Instructor",
                 "PSA Mermaid Instructor",
@@ -53,7 +53,7 @@ export default function Instructors() {
             name: "김진근",
             title: "강사",
             image: "/image/intro/instructors/instructor-jingen.jpeg",
-            description: "김진근",
+            description: "",
             certifications: [
                 "PSA Freediving Instructor Trainer",
                 "PSA Mermaid Instructor Trainer",
