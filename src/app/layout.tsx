@@ -54,6 +54,25 @@ export default function RootLayout({
         <meta name="naver-site-verification" content="cdf341ced157907d3022974d2a6f29bca0ce95a5" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <Script
+          src="//wcs.naver.net/wcslog.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="naver-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (!wcs_add) var wcs_add={};
+              wcs_add["wa"] = "s_29fef5cddca5";
+              if (!_nasa) var _nasa={};
+              if(window.wcs){
+                wcs.inflow();
+                wcs_do();
+              }
+            `
+          }}
+        />
+        <Script
           id="channel-talk"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
